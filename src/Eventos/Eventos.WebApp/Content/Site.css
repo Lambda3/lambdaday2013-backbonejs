@@ -1,3 +1,19 @@
-﻿body {
-    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+﻿#eventosApp h1 {
+    margin: 20px;
+}
+#eventosApp div#app-content button#incluir-evento {
+    margin: 0 0 20px 20px;
+}
+
+#eventosApp div#app-content table#listaEventos {
+    width: 60%;
+    margin-left: 20px;
+}
+
+#eventosApp div#app-content fieldset button {
+    display: block;
+}
+
+#eventosApp div#app-content div.alert-error {
+    margin: 0 20px 0 20px;
 }
