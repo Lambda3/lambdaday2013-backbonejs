@@ -2,7 +2,7 @@
   var __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
-  define(['Backbone', 'Handlebars', 'text!views/templates/ListaEventosViewTemplate.html', 'models/EventosCollection', 'views/ListaEventosItemView'], function(Backbione, Handlebars, Template, EventosCollection, ListaEventosItemView) {
+  define(['jquery', 'Backbone', 'Handlebars', 'text!views/templates/ListaEventosViewTemplate.html', 'models/EventosCollection', 'views/ListaEventosItemView'], function($, Backbione, Handlebars, Template, EventosCollection, ListaEventosItemView) {
     var ListaEventosView;
     return ListaEventosView = (function(_super) {
 

@@ -1,9 +1,10 @@
 ﻿define [
+    'jquery'
     'Backbone'
     'Handlebars'
     'text!views/templates/ListaEventosItemViewTemplate.html'
 ],
-(Backbone, Handlebars, Template) ->
+($, Backbone, Handlebars, Template) ->
     class ListaEventosItemView extends Backbone.View
 
         template: Template

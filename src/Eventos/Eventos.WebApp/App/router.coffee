@@ -1,10 +1,11 @@
 ﻿define [
+    'jquery'
     'Backbone'
     'views/AppView'
     'views/ListaEventosView'
     'views/CadastroEventoView'
 ],
-(Backbone, AppView, ListaEventosView, CadastroEventoView) ->
+($, Backbone, AppView, ListaEventosView, CadastroEventoView) ->
     class router extends Backbone.Router
 
         routes: 

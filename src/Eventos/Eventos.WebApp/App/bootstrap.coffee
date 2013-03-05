@@ -3,34 +3,31 @@
     baseUrl: "App",
 
     paths:
-        jQuery: '../Scripts/jquery-1.9.1.min'
-        jQueryUI: '../Scripts/jquery-ui-1.10.0.min'
-        Underscore: '../Scripts/underscore.min'
-        Backbone: '../Scripts/backbone.min'
-        Handlebars: '../Scripts/handlebars.min'
-        TwitterBootstrap: '../Scripts/bootstrap.min'
+        jquery: '../Scripts/jquery-1.9.1'
+        jQueryUI: '../Scripts/jquery-ui-1.10.0'
+        Underscore: '../Scripts/underscore'
+        Backbone: '../Scripts/backbone'
+        Handlebars: '../Scripts/handlebars'
+        TwitterBootstrap: '../Scripts/bootstrap'
         text: '../Scripts/text'
 
     shim:
-        'jQuery':
-            exports: '$'
-
         'jQueryUI':
-            deps: ['jQuery']
+            deps: ['jquery']
 
         'Handlebars':
-            deps: ['jQuery']
+            deps: ['jquery']
             exports: 'Handlebars'
 
         'Underscore':
             exports: '_'
 
         'Backbone':
-            deps: ['Underscore', 'jQuery', 'Handlebars']
+            deps: ['Underscore', 'jquery', 'Handlebars']
             exports: 'Backbone'
 
         'TwitterBootstrap':
-            deps: ['jQuery']
+            deps: ['jquery']
 
 require [
     'Handlebars'

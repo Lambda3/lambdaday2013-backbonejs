@@ -1,10 +1,11 @@
 ﻿define [
+    'jquery',
     'Backbone',
     'Handlebars'
     'text!views/templates/CadastroEventoViewTemplate.html'
     'models/EventoModel'
 ],
-(Backbone, Handlebars, Template, EventoModel) ->
+($, Backbone, Handlebars, Template, EventoModel) ->
     class CadastroEventoView extends Backbone.View
 
         template:Template
