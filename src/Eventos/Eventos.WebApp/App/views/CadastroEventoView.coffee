@@ -31,7 +31,7 @@
             @model.save()
 
         exibirLista :->
-            window.location = ''
+            window.location = '#'
 
         exibirErro: ->
             divMensagem = @$("div.alert-error")
