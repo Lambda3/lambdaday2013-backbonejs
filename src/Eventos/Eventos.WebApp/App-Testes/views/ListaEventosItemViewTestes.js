@@ -37,8 +37,8 @@
         it('deve exibir o nome do evento', function() {
           return expect(subject.$el.html()).toContain('Evento 1');
         });
-        it('deve exibir a data do evento já formatada em pt-br', function() {
-          return expect(subject.$el.html()).toContain('14/3/2013');
+        it('deve exibir a data do evento já formatada', function() {
+          return expect(subject.$el.html()).toContain('3/14/2013');
         });
         return it('deve exibir as vagas do evento', function() {
           return expect(subject.$el.html()).toContain('100');

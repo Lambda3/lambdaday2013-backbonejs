@@ -36,7 +36,7 @@ require [
         return "" if not valor
         try
             data = new Date(valor)
-            return data.getUTCDate() + "/" + (data.getUTCMonth() + 1) + "/" + data.getUTCFullYear()
+            return (data.getUTCMonth() + 1) + "/" + data.getUTCDate() + "/" + data.getUTCFullYear()
         catch error
             return valor
 

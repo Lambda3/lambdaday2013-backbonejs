@@ -38,8 +38,8 @@
             it 'deve exibir o nome do evento', ->
                 expect(subject.$el.html()).toContain('Evento 1')
 
-            it 'deve exibir a data do evento já formatada em pt-br', ->
-                expect(subject.$el.html()).toContain('14/3/2013')
+            it 'deve exibir a data do evento já formatada', ->
+                expect(subject.$el.html()).toContain('3/14/2013')
 
             it 'deve exibir as vagas do evento', ->
                 expect(subject.$el.html()).toContain('100')

@@ -160,13 +160,7 @@
     <Compile Include="Repository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App-Testes\bootstrapTeste.js">
-      <DependentUpon>bootstrapTeste.coffee</DependentUpon>
-    </Content>
-    <Content Include="App-Testes\bootstrapTeste.min.js">
-      <DependentUpon>bootstrapTeste.coffee</DependentUpon>
-    </Content>
-    <Content Include="App-Testes\Testes.html" />
+    <Content Include="App-Testes\testes.html" />
     <Content Include="App-Testes\views\AppViewTestes.js">
       <DependentUpon>AppViewTestes.coffee</DependentUpon>
     </Content>
@@ -328,7 +322,6 @@
     <Content Include="Scripts\jasmine\jasmine-html.js" />
     <Content Include="Scripts\jasmine\jasmine.js" />
     <Content Include="Scripts\jasmine\MIT.LICENSE" />
-    <Content Include="App-Testes\bootstrapTeste.coffee" />
     <Content Include="App-Testes\views\AppViewTestes.coffee" />
     <Content Include="App-Testes\views\ListaEventosViewTestes.coffee" />
     <Content Include="App-Testes\views\ListaEventosItemViewTestes.coffee" />
