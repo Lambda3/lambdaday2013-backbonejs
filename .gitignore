@@ -52,3 +52,4 @@ packages/
 .nuget/
 docs/~$*
 AppPackages/
+App_Data/
