@@ -39,16 +39,12 @@
       describe('Ao salvar o modelo com sucesso', function() {
         beforeEach(function() {
           return spyOn($, "ajax").andCallFake(function(parametros) {
-            parametros.success({
+            return parametros.success({
               Id: 1,
               Nome: "Evento 1",
               Data: "2013-03-14T12:56:59.0934901-03:00",
               QuantidadeVagas: 100
             });
-            parametros.then = function(a) {
-              return a.apply(this);
-            };
-            return parametros;
           });
         });
         return it('deve redirecionar para a listagem de eventos', function() {
@@ -59,13 +55,9 @@
       return describe('Ao salvar o modelo e der erro', function() {
         beforeEach(function() {
           return spyOn($, "ajax").andCallFake(function(parametros) {
-            parametros.success({
+            return parametros.success({
               status: 500
             });
-            parametros.then = function(a) {
-              return a.apply(this);
-            };
-            return parametros;
           });
         });
         return it('deve exibir mensagem', function() {

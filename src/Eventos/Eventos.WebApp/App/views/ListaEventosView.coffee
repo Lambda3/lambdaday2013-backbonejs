@@ -6,7 +6,7 @@
     'models/EventosCollection'
     'views/ListaEventosItemView'
 ],
-($, Backbione, Handlebars, Template, EventosCollection, ListaEventosItemView) ->
+($, Backbone, Handlebars, Template, EventosCollection, ListaEventosItemView) ->
     class ListaEventosView extends Backbone.View
 
         template: Template

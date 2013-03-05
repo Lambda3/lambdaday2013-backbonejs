@@ -8,7 +8,7 @@
     describe 'Cadastro Evento View', ->
 
         beforeEach -> 
-            spyOn(CadastroEventoView.prototype, 'exibirLista').andReturn()
+            spyOn(CadastroEventoView::, 'exibirLista').andReturn()
 
             subject = new CadastroEventoView
                 el:element
@@ -46,8 +46,6 @@
                         Nome:"Evento 1"
                         Data:"2013-03-14T12:56:59.0934901-03:00"
                         QuantidadeVagas:100
-                    parametros.then = (a)-> a.apply(@)
-                    parametros
 
             it 'deve redirecionar para a listagem de eventos', ->
                 $("#salvar", subject.el).click()
@@ -58,8 +56,6 @@
             beforeEach ->
                 spyOn($, "ajax").andCallFake (parametros) ->
                     parametros.success({status:500})
-                    parametros.then = (a)-> a.apply(@)
-                    parametros
 
             it 'deve exibir mensagem', ->
                 $("#salvar", subject.el).click()
