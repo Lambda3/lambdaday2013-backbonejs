@@ -1,7 +1,5 @@
 ﻿require.config
 
-    baseUrl: "App",
-
     paths:
         jquery: '../Scripts/jquery-1.9.1'
         jQueryUI: '../Scripts/jquery-ui-1.10.0'

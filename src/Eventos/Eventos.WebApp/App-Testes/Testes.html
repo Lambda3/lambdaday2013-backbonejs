@@ -7,7 +7,26 @@
     <script src="../Scripts/jasmine/jasmine.js"></script>
     <script src="../Scripts/jasmine/jasmine-html.js"></script>
     <script src="../Scripts/jasmine-jquery.js"></script>
-    <script data-main="bootstrapTeste.js" src="../Scripts/require.js"></script>
+    <script data-main="../App/bootstrap.js" src="../Scripts/require.js"></script>
+    <script type="text/javascript">
+        require([
+                "../App-Testes/views/AppViewTestes",
+                "../App-Testes/views/ListaEventosViewTestes", 
+                "../App-Testes/views/ListaEventosItemViewTestes",
+                "../App-Testes/views/CadastroEventoViewTestes"
+        ], function () {
+            var jasmineEnv = jasmine.getEnv();
+
+            var htmlReporter = new jasmine.HtmlReporter();
+            jasmineEnv.addReporter(htmlReporter);
+
+            jasmineEnv.specFilter = function (spec) {
+                return htmlReporter.specFilter(spec);
+            };
+
+            jasmineEnv.execute();
+        });
+    </script>
 </head>
 <body>
 </body>
