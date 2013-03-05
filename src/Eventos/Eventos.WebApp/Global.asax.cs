@@ -20,7 +20,7 @@ namespace Eventos.WebApp
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<Repository>());
+            Database.SetInitializer(new CreateDatabaseIfNotExists<Repository>());
        }
     }
 }
