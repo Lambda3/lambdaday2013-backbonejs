@@ -42,7 +42,7 @@
       };
 
       CadastroEventoView.prototype.exibirLista = function() {
-        return window.location = '';
+        return window.location = '#';
       };
 
       CadastroEventoView.prototype.exibirErro = function() {
