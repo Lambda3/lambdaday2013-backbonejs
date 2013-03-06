@@ -14,11 +14,6 @@
 
       ListaEventosItemView.prototype.template = Template;
 
-      ListaEventosItemView.prototype.initialize = function(options) {
-        this.el = options.el;
-        return this.model = options.model;
-      };
-
       ListaEventosItemView.prototype.render = function() {
         var context;
         context = Handlebars.compile(this.template);

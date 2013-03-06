@@ -15,7 +15,6 @@
             'click #salvar':'salvar'
 
         initialize: (options) ->
-            @el = options.el
             @model = new EventoModel()
             @model.on "change:Id", @exibirLista, @
             @model.on "error", @exibirErro, @

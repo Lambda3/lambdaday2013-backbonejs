@@ -22,7 +22,6 @@
       };
 
       CadastroEventoView.prototype.initialize = function(options) {
-        this.el = options.el;
         this.model = new EventoModel();
         this.model.on("change:Id", this.exibirLista, this);
         return this.model.on("error", this.exibirErro, this);

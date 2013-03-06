@@ -21,7 +21,6 @@
       };
 
       ListaEventosView.prototype.initialize = function(options) {
-        this.el = options.el;
         return this.collection = new EventosCollection();
       };
 

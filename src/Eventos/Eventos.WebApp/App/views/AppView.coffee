@@ -9,8 +9,5 @@
 
         template: Template
 
-        initialize: (options) ->
-            @el = options.el
-
         render: ->
             @$el.html Handlebars.compile @template

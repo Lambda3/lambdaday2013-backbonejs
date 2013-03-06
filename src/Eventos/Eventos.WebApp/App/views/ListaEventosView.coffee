@@ -15,7 +15,6 @@
             'click #incluir-evento':'criarEvento'
 
         initialize: (options) ->
-            @el = options.el
             @collection = new EventosCollection()
 
         render: ->

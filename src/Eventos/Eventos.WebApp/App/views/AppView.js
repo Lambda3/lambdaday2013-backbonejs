@@ -14,10 +14,6 @@
 
       AppView.prototype.template = Template;
 
-      AppView.prototype.initialize = function(options) {
-        return this.el = options.el;
-      };
-
       AppView.prototype.render = function() {
         return this.$el.html(Handlebars.compile(this.template));
       };
