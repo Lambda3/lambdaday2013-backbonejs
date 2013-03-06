@@ -30,7 +30,8 @@
             @model.save()
 
         exibirLista :->
-            window.location = '#'
+            Backbone.history.navigate '#',
+                trigger: true
 
         exibirErro: ->
             divMensagem = @$("div.alert-error")

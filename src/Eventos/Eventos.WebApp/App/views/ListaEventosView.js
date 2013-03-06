@@ -52,7 +52,9 @@
       };
 
       ListaEventosView.prototype.criarEvento = function() {
-        return window.location = '#novo';
+        return Backbone.history.navigate('novo', {
+          trigger: true
+        });
       };
 
       return ListaEventosView;

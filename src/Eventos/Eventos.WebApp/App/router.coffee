@@ -17,7 +17,6 @@
                 el:$("#app-container")
             appView.render()
             Backbone.history.start()
-            
 
         home: ->
             listaEventosView = new ListaEventosView

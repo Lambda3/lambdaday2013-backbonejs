@@ -35,4 +35,5 @@
                 itemView.render()
 
         criarEvento: ->
-            window.location ='#novo'
+            Backbone.history.navigate 'novo',
+                trigger: true

@@ -42,7 +42,9 @@
       };
 
       CadastroEventoView.prototype.exibirLista = function() {
-        return window.location = '#';
+        return Backbone.history.navigate('#', {
+          trigger: true
+        });
       };
 
       CadastroEventoView.prototype.exibirErro = function() {
